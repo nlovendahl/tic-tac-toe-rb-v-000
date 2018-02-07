@@ -47,6 +47,12 @@ def turn(board)
 end
 
 def turn_count(board)
-  count = board.select {|i| i.is_a?(Integer)}
-  return count.length
+  x = 0
+  board.each do |i|
+    if i.is_a?(Integer)
+      x += 1
+    else
+      x += 0
+    end
+  end
 end
