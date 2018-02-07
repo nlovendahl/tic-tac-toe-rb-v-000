@@ -55,4 +55,5 @@ def turn_count(board)
       x += 0
     end
   end
+  return x
 end
