@@ -107,7 +107,7 @@ def play(board)
     turn(board)
   end
   if won?(board)
-    puts "Congratulations, X!"
+    puts "Congratulations, #{current_player(board)}!"
   elsif draw?(board)
     puts "This game is a draw. Try again."
   end
