@@ -50,3 +50,11 @@ def turn_count(board)
   count = board.select {|i| i != " "}
   return count.length
 end
+
+def current_player(board)
+  if turn_count(board) % 2 == 0
+    return "O"
+  else
+    return "X"
+  end
+end
