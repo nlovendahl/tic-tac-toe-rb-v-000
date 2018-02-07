@@ -111,3 +111,4 @@ def play(board)
   elsif draw?(board)
     puts "This game is a draw. Try again."
   end
+end
