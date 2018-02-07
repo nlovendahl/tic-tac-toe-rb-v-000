@@ -48,7 +48,7 @@ end
 
 def turn_count(board)
   count = board.select {|i| i != " "}
-  return count.length
+  return count.length - 1
 end
 
 def current_player(board)
