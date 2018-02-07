@@ -46,3 +46,8 @@ def turn(board)
     move(board, index, character)
   end
 end
+
+def turn_count(board)
+  count = board.any? {|i| i.is_a?(Integer)}
+  return count.length
+end
