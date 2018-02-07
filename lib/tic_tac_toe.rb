@@ -38,12 +38,11 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
-  if !valid_move?(board, index)
-    puts "Sorry, that space is occupied. Please choose another."
-    input = gets.strip
-    index = input_to_index(input)
+  if valid_move?(board, index)
+    move(board, index, current_player = "X")
+    display_board(board)
   else
-    move(board, index, character)
+    turn(board)
   end
 end
 
