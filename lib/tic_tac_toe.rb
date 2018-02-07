@@ -27,5 +27,5 @@ def move(board, index, current_player)
 end
 
 def position_taken?(board, index)
-  board[location] != " " && board[location] != ""
+  !(board[index].nil? || board[index] == " ")
 end
