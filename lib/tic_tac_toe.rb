@@ -93,3 +93,11 @@ def over?(board)
     return false
   end
 end
+
+def winner(board)
+  if combo = won?(board)
+    return board[combo.first]
+  else
+    return nil
+  end
+end
