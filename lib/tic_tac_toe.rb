@@ -101,3 +101,13 @@ def winner(board)
     return nil
   end
 end
+
+def play(board)
+  until over?(board)
+    turn(board)
+  end
+  if won?(board)
+    puts "Congratulations, you won!"
+  elsif draw?(board)
+    puts "This game is a draw. Try again."
+  end
