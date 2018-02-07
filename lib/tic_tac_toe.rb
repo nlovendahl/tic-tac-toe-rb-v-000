@@ -31,5 +31,9 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  !(index <= 8 || position_taken?(board, index))
+  if (position_taken?(board, index) == true) || (index > 8)
+    return false
+  else
+    return true
+  end
 end
