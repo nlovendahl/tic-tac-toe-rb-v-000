@@ -48,6 +48,6 @@ def turn(board)
 end
 
 def turn_count(board)
-  count = board.any? {|i| i.is_a?(Integer)}
+  count = board.select {|i| i.is_a?(Integer)}
   return count.length
 end
