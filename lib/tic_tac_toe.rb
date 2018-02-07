@@ -47,6 +47,6 @@ def turn(board)
 end
 
 def turn_count(board)
-  count_array = board.select {|i| i != " "}
-  return count_array.length
+  count = board.select {|i| i != " "}
+  return count.length
 end
